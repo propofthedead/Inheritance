@@ -26,12 +26,16 @@ namespace Inheritance
 
 
 			e1.Manager = m1;
+			Administrator a1 = new Administrator();
+			a1.AssignedTo = m1;
 			List<Employee> employees = new List<Employee>();
 			employees.Add(e1);
 			employees.Add(m1);
+			employees.Add(a1);
 
 			foreach (Employee em in employees) {
-				Console.WriteLine($"Employee: Name {em.Name} salaray {em.Salary}");
+				string msg=em.Print();
+				Console.WriteLine(msg);
 			}
 		}
 	}

@@ -10,9 +10,9 @@ namespace Inheritance
 	{
 		public Manager AssignedTo { get; set; }
 
-		public override void Print()
+		public override string Print()
 		{
-			Console.WriteLine($"Administrator: assigned to {AssignedTo.Name}");
+			return ($"Administrator: assigned to {AssignedTo.Name}");
 		}
 
 	}
