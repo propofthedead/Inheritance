@@ -26,7 +26,13 @@ namespace Inheritance
 
 
 			e1.Manager = m1;
+			List<Employee> employees = new List<Employee>();
+			employees.Add(e1);
+			employees.Add(m1);
 
+			foreach (Employee em in employees) {
+				Console.WriteLine($"Employee: Name {em.Name} salaray {em.Salary}");
+			}
 		}
 	}
 }
