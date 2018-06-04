@@ -10,7 +10,11 @@ namespace Inheritance
 	{
 		public decimal PurchaseAuth { get; set; }
 
-
+		public override void Print()
+		{
+			base.Print();
+			Console.WriteLine($"Manger: PurchaseAuth {PurchaseAuth}");
+		}
 
 	}
 }

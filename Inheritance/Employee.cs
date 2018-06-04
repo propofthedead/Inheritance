@@ -16,9 +16,9 @@ namespace Inheritance
 		public Manager Manager { get; set; }
 		public int VacationDays { get; set; }
 
-		public void Print()
+		public virtual void Print()
 		{
-			Console.WriteLine("This is an employee");
+			Console.WriteLine($"Employee:{Name}, position{Position}, salary:{Salary}");
 		}
 	}
 
