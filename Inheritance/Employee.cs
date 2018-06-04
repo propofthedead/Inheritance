@@ -8,5 +8,18 @@ namespace Inheritance
 {
 	class Employee
 	{
+		private int EmployeeOnly = 0;
+
+		public string Name { get; set; }
+		public string Position { get; set; }
+		public decimal Salary { get; set; }
+		public Manager Manager { get; set; }
+		public int VacationDays { get; set; }
+
+		public void Print()
+		{
+			Console.WriteLine("This is an employee");
+		}
 	}
+
 }
